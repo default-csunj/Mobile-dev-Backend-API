@@ -29,12 +29,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/register",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/register",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"register"
@@ -51,7 +54,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "3|dZyykcACPKnVmTsTxMMCw3EhWqJexIIHc40GPjgl",
+									"value": "3|tYZoTQ3OzymdiXi9zd1eP88pl4ECs4oxuFB9HwZ9",
 									"type": "string"
 								}
 							]
@@ -66,7 +69,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"username\": \"supiraru\",\n    \"email\": \"farhandewanta11@gmail.com\",\n    \"password\": \"123456\",\n    \"password_confirmation\": \"123456\"\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -74,12 +77,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/logout",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/logout",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"logout"
@@ -119,12 +125,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/login",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/login",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"login"
@@ -172,12 +181,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/posts",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/posts",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"posts"
@@ -194,7 +206,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -209,7 +221,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"caption\": \"Posting hehe\"\n}",
+							"raw": "{\n    \"caption\": \"This is My First Post in Amazon Web Service\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -217,12 +229,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/posts",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/posts",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"posts"
@@ -242,7 +257,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -265,12 +280,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/posts/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/posts/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"posts",
@@ -288,7 +306,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -311,12 +329,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/posts/3",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/posts/3",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"posts",
@@ -334,7 +355,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -357,12 +378,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/posts/4",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/posts/4",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"posts",
@@ -388,7 +412,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -411,12 +435,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/comments/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/comments/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"comments",
@@ -434,7 +461,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -449,7 +476,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"comment\": \"Posting hehe\"\n}",
+							"raw": "{\n    \"comment\": \"My First Comment in First Post\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -457,12 +484,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/comments/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/comments/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"comments",
@@ -488,7 +518,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -511,12 +541,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/likes/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/likes/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"likes",
@@ -534,7 +567,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -557,12 +590,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/likes/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/likes/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"likes",
@@ -580,7 +616,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -603,12 +639,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/likes/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/likes/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"likes",
@@ -634,7 +673,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -657,12 +696,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/likes/comment/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/likes/comment/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"likes",
@@ -681,7 +723,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -704,12 +746,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/likes/comment/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/likes/comment/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"likes",
@@ -728,7 +773,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -751,12 +796,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/likes/comment/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/likes/comment/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"likes",
@@ -783,7 +831,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -806,12 +854,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/subcomments/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/subcomments/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"subcomments",
@@ -829,7 +880,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -844,7 +895,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"sub_comment\": \"SubCommenting hehe\"\n}",
+							"raw": "{\n    \"sub_comment\": \"Sub Comment on The First Comment\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -852,12 +903,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/subcomments/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/subcomments/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"subcomments",
@@ -883,7 +937,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -906,12 +960,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/following",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/following",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"following"
@@ -931,7 +988,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -954,12 +1011,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/followers",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/followers",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"followers"
@@ -979,7 +1039,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -1002,12 +1062,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/following/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/following/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"following",
@@ -1028,7 +1091,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -1051,12 +1114,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/followers/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/followers/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"followers",
@@ -1074,7 +1140,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -1097,12 +1163,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/follows/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/follows/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"follows",
@@ -1120,7 +1189,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -1143,12 +1212,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/follows/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/follows/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"follows",
@@ -1174,7 +1246,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -1197,12 +1269,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/profile",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/profile",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"profile"
@@ -1222,7 +1297,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "5|ZkYrHm2t4cFqToZ7TKiqIWI8MmflIiPnw4tLHfnz",
+									"value": "1|DtdkRSNqeGcuHrtJulndPIYIUM2M3C3308aJcyCc",
 									"type": "string"
 								}
 							]
@@ -1245,12 +1320,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8000/api/profile/1",
+							"raw": "http://ec2-13-229-108-134.ap-southeast-1.compute.amazonaws.com/api/profile/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-13-229-108-134",
+								"ap-southeast-1",
+								"compute",
+								"amazonaws",
+								"com"
 							],
-							"port": "8000",
 							"path": [
 								"api",
 								"profile",
