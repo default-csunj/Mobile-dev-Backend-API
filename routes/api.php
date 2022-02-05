@@ -31,6 +31,10 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout']);
 
+//posts guests
+Route::get('/posts/guests', [PostController::class, 'indexGuests']);
+Route::post('/posts/guests', [PostController::class, 'storeGuests']);
+Route::delete('/posts/guests/{post}', [PostController::class, 'deleteGuests']);
 
 //post
 Route::get('/posts', [PostController::class, 'index']);
@@ -38,6 +42,7 @@ Route::post('/posts', [PostController::class, 'store']);
 Route::get('/posts/{id}', [PostController::class, 'specific']);
 Route::delete('/posts/{post}', [PostController::class, 'destroy']);
 Route::put('/posts/{post}', [PostController::class, 'update']);
+
 
 //like
 Route::get('/likes/{post}', [LikeController::class, 'show']);
@@ -54,7 +59,7 @@ Route::get('/comments/{post}', [CommentController::class, 'show']);
 Route::post('/comments/{post}', [CommentController::class, 'store']);
 
 //subcomment
-Route::get('    {comment}', [SubCommentController::class, 'show']);
+Route::get('{comment}', [SubCommentController::class, 'show']);
 Route::post('/subcomments/{comment}', [SubCommentController::class, 'store']);
 
 //follows

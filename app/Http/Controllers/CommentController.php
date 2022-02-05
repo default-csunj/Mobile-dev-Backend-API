@@ -14,7 +14,7 @@ class CommentController extends Controller
     }
 
     public function show(Post $post){
-        $data = Comment::select('id', 'post_id', 'user_id', 'comment')->where('post_id', $post->id)->withCount('likes')->withCount('subComments')->with('details')->with('subComments.user')->first();
+        $data = Comment::select('id', 'post_id', 'user_id', 'comment')->where('post_id', $post->id)->withCount('likes')->withCount('subComments')->with(['details','subComments.user'])->first();
         return response([
             'comments' => $data,
         ], 200);

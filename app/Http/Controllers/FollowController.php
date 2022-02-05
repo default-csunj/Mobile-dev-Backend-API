@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Follow;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class FollowController extends Controller
@@ -14,65 +15,47 @@ class FollowController extends Controller
         $this->middleware(['auth:sanctum']);
     }
     
-    public function following(Request $request){
-        $userId = [];
-        if($request->user()){
-            $following = $request->user()->following()->get();
-            for( $i = 0; $i < $following->count(); $i++){
-                $userId[] = $following[$i]->followers;
-            }
-        }
-        $users = User::latest()->whereIn('id', $userId)->get();
-        
+    public function following(Request $request){ 
         return response([
             "status" => "Success",
-            "data" => $users
+            "data" => $request->user()->load('following')
 
         ], 200);
     }
     
     public function followers(Request $request){
-        $userId = [];
-        if($request->user()){
-            $followers = $request->user()->followers()->get();
-            for( $i = 0; $i < $followers->count(); $i++){
-                $userId[] = $followers[$i]->following;
-            }
-        }
-        $users = User::latest()->whereIn('id', $userId)->get();
         return response([
             "status" => "Success",
-            "data" => $users
+            "data" => $request->user()->load('followers')
 
         ], 200);
     }
 
     public function peopleFollowing(Request $request, $id){
-        $userId = [];
-        $user = User::find($id);
-        $following = $user->following()->get();
-        for( $i = 0; $i < $following->count(); $i++){
-            $userId[] = $following[$i]->followers;
+        $user = User::where('id', $id)->with('following')->first();
+        if(!$user){
+            return response([
+                "status" => "Failed",
+                "data" => new \stdClass
+            ], 404);
         }
-        $users = User::latest()->whereIn('id', $userId)->get();
         return response([
             "status" => "Success",
-            "data" => $users
-
+            "data" => $user
         ], 200);
     }
 
     public function peopleFollowers(Request $request, $id){
-        $userId = [];
-        $user = User::find($id);
-        $followers = $user->followers()->get();
-        for( $i = 0; $i < $followers->count(); $i++){
-            $userId[] = $followers[$i]->following;
+        $user = User::where('id', $id)->with('followers')->first();
+        if(!$user){
+            return response([
+                "status" => "Failed",
+                "data" => new \stdClass
+            ], 404);
         }
-        $users = User::latest()->whereIn('id', $userId)->get();
         return response([
             "status" => "Success",
-            "data" => $users
+            "data" => $user
         ], 200);
     }
 

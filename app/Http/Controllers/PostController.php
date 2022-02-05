@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Photos;
+use App\Models\PostGuest;
 use App\Models\User;
 
 use Illuminate\Http\Request;
@@ -12,7 +13,7 @@ class PostController extends Controller
 {
     public function __construct()
     {
-        $this->middleware(['auth:sanctum'])->except(['index']);
+        $this->middleware(['auth:sanctum'])->except(['index', 'indexGuests', 'storeGuests', 'deleteGuests']);
     }
     
     public function index()
@@ -100,5 +101,64 @@ class PostController extends Controller
             "status" => "Success",
             "data" => $post
         ], 201);
+    }
+
+    public function indexGuests()
+    {
+        $posts = PostGuest::latest()->get();
+        return response([
+            'status' => 'success',
+            'data' => $posts
+        ], 200);
+    }
+
+    public function storeGuests(Request $request)
+    {
+    
+        $this->validate($request,[
+            'name' => 'required|string',
+            'likes' => 'required|integer',
+            'comments' => 'required|integer',
+            'caption' => 'required|string'
+        ]);
+
+        try {
+            $post = PostGuest::create([
+                "name"=> $request->name,
+                "likes"=> $request->likes,
+                "comments"=> $request->comments,
+                "caption"=> $request->caption
+            ]);
+    
+            return response([
+                'status' => 'success',
+                'data' => $post
+            ], 201);
+        } catch (\Throwable $th) {
+            return response([
+                'status' => 'error',
+                'data' => $th
+            ], 500);
+        }
+    }
+
+    public function deleteGuests(Request $request, PostGuest $post)
+    {
+
+        try {
+
+            $post->delete();
+
+            return response([
+                'status' => 'success delete post',
+                'data' => new \stdClass
+            ]);
+        } catch (\Throwable $th) {
+            return response([
+                'status' => 'error',
+                'data' => $th
+            ], 500);
+        }
+
     }
 }
